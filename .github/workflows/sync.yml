@@ -30,6 +30,7 @@ jobs:
           target_repo_token: ${{ secrets.GITHUB_TOKEN }} # automatically generated, no need to set
           exclude: |
             .github/workflows/sync.yml
+            tgsend.sh  # 新增排除根目录文件
 
       - name: Check for errors
         if: failure()
