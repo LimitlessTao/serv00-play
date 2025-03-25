@@ -31,7 +31,7 @@ urlencode() {
 
 toTGMsg() {
   local msg=$1
-  local title="*㊙小秘书💃消息㊙*"
+  local title="*㊙小秘书💃Serv00消息㊙*"
   local host_icon="🖥️"
   local user_icon="👤"
   local time_icon="⏰"
@@ -54,10 +54,10 @@ toTGMsg() {
 
   # 格式化消息内容，Markdown 换行使用两个空格 + 换行
   local formatted_msg="${title}  \n\n"
-  formatted_msg+="${host_icon} ：* ${host}  \n"
   formatted_msg+="${user_icon} ：* ${user}  \n"
+  formatted_msg+="${host_icon} ：* ${host}  \n"
   formatted_msg+="${time_icon} ：* ${current_time}  \n\n"
-  formatted_msg+="${notify_icon} ：* ${notify_content}  \n\n"
+  formatted_msg+="${notify_icon} * ${notify_content}  \n\n"
 
   echo -e "$formatted_msg|${host}|${user}" # 使用 -e 选项以确保换行符生效
 }
